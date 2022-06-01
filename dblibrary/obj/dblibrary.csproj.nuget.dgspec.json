@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ahmedyo\\Desktop\\dblibrary\\dblibrary\\dblibrary.csproj": {}
+    "C:\\Users\\ahmedyo\\Desktop\\school projects\\webshop api\\dblibrary\\dblibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ahmedyo\\Desktop\\dblibrary\\dblibrary\\dblibrary.csproj": {
+    "C:\\Users\\ahmedyo\\Desktop\\school projects\\webshop api\\dblibrary\\dblibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmedyo\\Desktop\\dblibrary\\dblibrary\\dblibrary.csproj",
+        "projectUniqueName": "C:\\Users\\ahmedyo\\Desktop\\school projects\\webshop api\\dblibrary\\dblibrary.csproj",
         "projectName": "dblibrary",
-        "projectPath": "C:\\Users\\ahmedyo\\Desktop\\dblibrary\\dblibrary\\dblibrary.csproj",
+        "projectPath": "C:\\Users\\ahmedyo\\Desktop\\school projects\\webshop api\\dblibrary\\dblibrary.csproj",
         "packagesPath": "C:\\Users\\ahmedyo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmedyo\\Desktop\\dblibrary\\dblibrary\\obj\\",
+        "outputPath": "C:\\Users\\ahmedyo\\Desktop\\school projects\\webshop api\\dblibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ahmedyo\\AppData\\Roaming\\NuGet\\NuGet.Config",

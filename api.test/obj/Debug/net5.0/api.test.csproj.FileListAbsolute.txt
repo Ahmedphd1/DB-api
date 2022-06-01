@@ -219,3 +219,12 @@ C:\Users\ahmedyo\Desktop\dblibrary\api.test\bin\Debug\net5.0\dbcontroller.dll
 C:\Users\ahmedyo\Desktop\dblibrary\api.test\bin\Debug\net5.0\dblibrary.dll
 C:\Users\ahmedyo\Desktop\dblibrary\api.test\bin\Debug\net5.0\dbcontroller.pdb
 C:\Users\ahmedyo\Desktop\dblibrary\api.test\bin\Debug\net5.0\dblibrary.pdb
+C:\Users\ahmedyo\Desktop\school projects\webshop api\api.test\bin\Debug\net5.0\CoverletSourceRootsMapping
+C:\Users\ahmedyo\Desktop\school projects\webshop api\api.test\obj\Debug\net5.0\api.test.csproj.AssemblyReference.cache
+C:\Users\ahmedyo\Desktop\school projects\webshop api\api.test\obj\Debug\net5.0\api.test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmedyo\Desktop\school projects\webshop api\api.test\obj\Debug\net5.0\api.test.AssemblyInfoInputs.cache
+C:\Users\ahmedyo\Desktop\school projects\webshop api\api.test\obj\Debug\net5.0\api.test.AssemblyInfo.cs
+C:\Users\ahmedyo\Desktop\school projects\webshop api\api.test\obj\Debug\net5.0\api.test.csproj.CoreCompileInputs.cache
+C:\Users\ahmedyo\Desktop\school projects\webshop api\api.test\obj\Debug\net5.0\api.test.dll
+C:\Users\ahmedyo\Desktop\school projects\webshop api\api.test\obj\Debug\net5.0\refint\api.test.dll
+C:\Users\ahmedyo\Desktop\school projects\webshop api\api.test\obj\Debug\net5.0\api.test.pdb

@@ -16,23 +16,23 @@ namespace test
     {
         private authorcontroller controller;
         private Mock<IAuthorRepository> authormock;
-        private List<author> authors;
+        private List<user> authors;
 
         [SetUp]
         public void Setup()
         {
 
             authormock = new Mock<IAuthorRepository>();
-            var authoritemsmock = new Mock<author>();
+            var authoritemsmock = new Mock<user>();
 
             authoritemsmock.Setup(item => item.authorid).Returns(10);
 
-            authors = new List<author>()
+            authors = new List<user>()
           {
               authoritemsmock.Object
           };
 
-            authormock.Setup(c => c.getAllAuthors()).Returns((Task<List<author>>)authors.AsEnumerable());
+            authormock.Setup(c => c.getAllAuthors()).Returns((Task<List<user>>)authors.AsEnumerable());
 
             controller = new authorcontroller(authormock.Object);
         }
@@ -40,7 +40,7 @@ namespace test
         [Test]
         public void ShouldReturnCharged()
         {
-            authormock.Setup(p => p.getAllAuthors()).Returns((Task<List<author>>)authors.AsEnumerable());
+            authormock.Setup(p => p.getAllAuthors()).Returns((Task<List<user>>)authors.AsEnumerable());
 
             // act
             var result = controller.getallauthors();
@@ -49,13 +49,13 @@ namespace test
             // myInterfaceMock.Verify((m => m.DoesSomething()), Times.Once());
             authormock.Verify(s => s.getAllAuthors(), Times.Once());
 
-            Assert.AreEqual(typeof(author), (result.Result as List<author>)[0].GetType());
+            Assert.AreEqual(typeof(user), (result.Result as List<user>)[0].GetType());
         }
 
         [Test]
         public void ShouldReturnNotCharged()
         {
-            authormock.Setup(p => p.getAllAuthors()).Returns((Task<List<author>>)authors.AsEnumerable());
+            authormock.Setup(p => p.getAllAuthors()).Returns((Task<List<user>>)authors.AsEnumerable());
 
             // act
             var result = controller.getallauthors();
@@ -64,7 +64,7 @@ namespace test
             // myInterfaceMock.Verify((m => m.DoesSomething()), Times.Once());
             authormock.Verify(s => s.getAllAuthors(), Times.Once());
 
-            Assert.AreEqual(null, (result.Result as List<author>)[0]);
+            Assert.AreEqual(null, (result.Result as List<user>)[0]);
         }
     }
 }

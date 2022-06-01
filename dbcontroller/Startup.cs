@@ -13,6 +13,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using dblibrary;
 using dblibrary.database;
+using Microsoft.EntityFrameworkCore;
+using dblibrary.models;
+using dblibrary.repos;
+
 
 namespace dbcontroller
 {
@@ -37,9 +41,18 @@ namespace dbcontroller
                 });
             });
 
-            services.AddScoped<IBookRepository, bookRepository>();
-            services.AddScoped<IAuthorRepository, AuthorRepository>();
-            services.AddDbContext<ABcontext>();//fejl mangler
+            services.AddControllers().AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling =
+            Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
+            services.AddScoped<iaddressrepo, addressrepo>();
+            services.AddScoped<icurrencyrepo, currencyrepo>();
+            services.AddScoped<ideliveryrepo, deliveryrepo>();
+            services.AddScoped<iordersrepo, ordersrepo>();
+            services.AddScoped<ipaymentrepo, paymentrepo>();
+            services.AddScoped<iproductrepo, productrepo>();
+            services.AddScoped<isellerrepo, sellerrepo>();
+            services.AddScoped<iuserrepo, userrepo>();
+            services.AddDbContext<ABcontext>(x => x.UseSqlServer(Configuration.GetConnectionString("Default")));//fejl mangler
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

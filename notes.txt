@@ -1,0 +1,16 @@
+Add foreign key on book 
+
+            migrationBuilder.AddForeignKey(
+            name: "FK_book_author",
+            table: "book",
+            column: "authorid",
+            principalTable: "author",
+            principalColumn: "authorid",
+            onDelete: ReferentialAction.Cascade);
+
+                    public async Task<List<Author>> GetAllAuthorsAndBooks()
+        {
+            List<Author> list = new List<Author>();
+            list = await context.Author.Include(author => author.Books).ToListAsync();
+            return list;
+        }

@@ -8695,11 +8695,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmedyo\\Desktop\\dblibrary\\api.test\\api.test.csproj",
+      "projectUniqueName": "C:\\Users\\ahmedyo\\Desktop\\school projects\\webshop api\\api.test\\api.test.csproj",
       "projectName": "api.test",
-      "projectPath": "C:\\Users\\ahmedyo\\Desktop\\dblibrary\\api.test\\api.test.csproj",
+      "projectPath": "C:\\Users\\ahmedyo\\Desktop\\school projects\\webshop api\\api.test\\api.test.csproj",
       "packagesPath": "C:\\Users\\ahmedyo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmedyo\\Desktop\\dblibrary\\api.test\\obj\\",
+      "outputPath": "C:\\Users\\ahmedyo\\Desktop\\school projects\\webshop api\\api.test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahmedyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8716,11 +8716,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\ahmedyo\\Desktop\\dblibrary\\dbcontroller\\dbcontroller.csproj": {
-              "projectPath": "C:\\Users\\ahmedyo\\Desktop\\dblibrary\\dbcontroller\\dbcontroller.csproj"
+            "C:\\Users\\ahmedyo\\Desktop\\school projects\\webshop api\\dbcontroller\\dbcontroller.csproj": {
+              "projectPath": "C:\\Users\\ahmedyo\\Desktop\\school projects\\webshop api\\dbcontroller\\dbcontroller.csproj"
             },
-            "C:\\Users\\ahmedyo\\Desktop\\dblibrary\\dblibrary\\dblibrary.csproj": {
-              "projectPath": "C:\\Users\\ahmedyo\\Desktop\\dblibrary\\dblibrary\\dblibrary.csproj"
+            "C:\\Users\\ahmedyo\\Desktop\\school projects\\webshop api\\dblibrary\\dblibrary.csproj": {
+              "projectPath": "C:\\Users\\ahmedyo\\Desktop\\school projects\\webshop api\\dblibrary\\dblibrary.csproj"
             }
           }
         }
