@@ -16,6 +16,11 @@ using dblibrary.database;
 using Microsoft.EntityFrameworkCore;
 using dblibrary.models;
 using dblibrary.repos;
+using Microsoft.AspNetCore.Authentication;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 
 namespace dbcontroller
@@ -33,6 +38,20 @@ namespace dbcontroller
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+            {
+                options.RequireHttpsMetadata = false;
+                options.SaveToken = true;
+                options.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidAudience = Configuration["JWT:Audience"],
+                    ValidIssuer = Configuration["JWT:Issuer"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:key"]))
+                };
+            });
+
             services.AddCors(options =>
             {
                 options.AddPolicy(name: "corsrules", builder =>
@@ -46,6 +65,7 @@ namespace dbcontroller
 
             services.AddScoped<iaddressrepo, addressrepo>();
             services.AddScoped<icurrencyrepo, currencyrepo>();
+            services.AddScoped<icurrencyuserrepo, currencyuserrepo>();
             services.AddScoped<ideliveryrepo, deliveryrepo>();
             services.AddScoped<iordersrepo, ordersrepo>();
             services.AddScoped<ipaymentrepo, paymentrepo>();
@@ -70,6 +90,7 @@ namespace dbcontroller
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "dbcontroller v1"));
             }
 
+            app.UseAuthentication();
             app.UseHttpsRedirection();
 
             app.UseRouting();

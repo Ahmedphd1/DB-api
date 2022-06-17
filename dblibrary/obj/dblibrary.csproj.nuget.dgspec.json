@@ -1,21 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ahmedyo\\Desktop\\school projects\\webshop api\\dblibrary\\dblibrary.csproj": {}
+    "C:\\Users\\Tec\\Desktop\\webshop api\\dblibrary\\dblibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ahmedyo\\Desktop\\school projects\\webshop api\\dblibrary\\dblibrary.csproj": {
+    "C:\\Users\\Tec\\Desktop\\webshop api\\dblibrary\\dblibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmedyo\\Desktop\\school projects\\webshop api\\dblibrary\\dblibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Tec\\Desktop\\webshop api\\dblibrary\\dblibrary.csproj",
         "projectName": "dblibrary",
-        "projectPath": "C:\\Users\\ahmedyo\\Desktop\\school projects\\webshop api\\dblibrary\\dblibrary.csproj",
-        "packagesPath": "C:\\Users\\ahmedyo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmedyo\\Desktop\\school projects\\webshop api\\dblibrary\\obj\\",
+        "projectPath": "C:\\Users\\Tec\\Desktop\\webshop api\\dblibrary\\dblibrary.csproj",
+        "packagesPath": "C:\\Users\\Tec\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tec\\Desktop\\webshop api\\dblibrary\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ahmedyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Tec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

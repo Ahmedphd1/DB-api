@@ -9,6 +9,7 @@ using dblibrary.models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace dbcontroller.Controllers
 {
@@ -88,6 +89,27 @@ namespace dbcontroller.Controllers
             try
             {
                 user myresult = context.get(userid);
+
+                if (myresult == null)
+                {
+                    return Problem("no data");
+                }
+
+                return Ok(myresult);
+
+            }
+            catch (Exception ex)
+            {
+                return Problem(ex.Message);
+            }
+        }
+
+        [HttpGet("/api/getuserbyname")]
+        public async Task<IActionResult> getbyname(string username)
+        {
+            try
+            {
+                user myresult = context.getbyname(username);
 
                 if (myresult == null)
                 {

@@ -13,6 +13,7 @@ namespace dblibrary.repos
     //Why!! - polymorf, Unit test, og abstract tænkning
     public interface iproductrepo
     {
+        Task<List<product>> getall();
         Task<product> create(product entity);
         Task<product> delete(int id);
 
@@ -27,6 +28,11 @@ namespace dblibrary.repos
         public productrepo(ABcontext context)
         {
             this.context = context;
+        }
+
+        public Task<List<product>> getall()
+        {
+            return context.product.ToListAsync();
         }
 
         public async Task<product> create(product entity)

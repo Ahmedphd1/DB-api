@@ -16,6 +16,8 @@ namespace dblibrary.repos
         Task<List<user>> getall();
         Task<List<user>> gettablesbyid(int userid);
         user get(int id);
+
+        user getbyname(string username);
         Task<user> create(user entity);
         Task<user> delete(int id);
 
@@ -56,6 +58,11 @@ namespace dblibrary.repos
         public user get(int id)
         {
             return context.user.FirstOrDefault((userobj) => userobj.userid == id);
+        }
+
+        public user getbyname(string username)
+        {
+            return context.user.FirstOrDefault((userobj) => userobj.username == username);
         }
 
         public Task<List<user>> getall()

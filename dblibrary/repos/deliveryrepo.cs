@@ -13,6 +13,7 @@ namespace dblibrary.repos
     //Why!! - polymorf, Unit test, og abstract tænkning
     public interface ideliveryrepo
     {
+        Task<List<delivery>> getall();
         Task<delivery> create(delivery entity);
         Task<delivery> delete(int id);
 
@@ -27,6 +28,11 @@ namespace dblibrary.repos
         public deliveryrepo(ABcontext context)
         {
             this.context = context;
+        }
+
+        public Task<List<delivery>> getall()
+        {
+            return context.delivery.ToListAsync();
         }
 
         public async Task<delivery> create(delivery entity)

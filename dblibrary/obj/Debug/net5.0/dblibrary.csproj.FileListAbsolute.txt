@@ -34,3 +34,27 @@ C:\Users\ahmedyo\Desktop\school projects\webshop api\dblibrary\obj\Debug\net5.0\
 C:\Users\ahmedyo\Desktop\school projects\webshop api\dblibrary\obj\Debug\net5.0\refint\dblibrary.dll
 C:\Users\ahmedyo\Desktop\school projects\webshop api\dblibrary\obj\Debug\net5.0\dblibrary.pdb
 C:\Users\ahmedyo\Desktop\school projects\webshop api\dblibrary\obj\Debug\net5.0\ref\dblibrary.dll
+C:\Users\ahmed\Desktop\webshop api\dblibrary\bin\Debug\net5.0\dblibrary.deps.json
+C:\Users\ahmed\Desktop\webshop api\dblibrary\bin\Debug\net5.0\dblibrary.dll
+C:\Users\ahmed\Desktop\webshop api\dblibrary\bin\Debug\net5.0\dblibrary.pdb
+C:\Users\ahmed\Desktop\webshop api\dblibrary\obj\Debug\net5.0\dblibrary.csproj.AssemblyReference.cache
+C:\Users\ahmed\Desktop\webshop api\dblibrary\obj\Debug\net5.0\dblibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmed\Desktop\webshop api\dblibrary\obj\Debug\net5.0\dblibrary.AssemblyInfoInputs.cache
+C:\Users\ahmed\Desktop\webshop api\dblibrary\obj\Debug\net5.0\dblibrary.AssemblyInfo.cs
+C:\Users\ahmed\Desktop\webshop api\dblibrary\obj\Debug\net5.0\dblibrary.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\Desktop\webshop api\dblibrary\obj\Debug\net5.0\dblibrary.dll
+C:\Users\ahmed\Desktop\webshop api\dblibrary\obj\Debug\net5.0\refint\dblibrary.dll
+C:\Users\ahmed\Desktop\webshop api\dblibrary\obj\Debug\net5.0\dblibrary.pdb
+C:\Users\ahmed\Desktop\webshop api\dblibrary\obj\Debug\net5.0\ref\dblibrary.dll
+C:\Users\Tec\Desktop\webshop api\dblibrary\bin\Debug\net5.0\dblibrary.deps.json
+C:\Users\Tec\Desktop\webshop api\dblibrary\bin\Debug\net5.0\dblibrary.dll
+C:\Users\Tec\Desktop\webshop api\dblibrary\bin\Debug\net5.0\dblibrary.pdb
+C:\Users\Tec\Desktop\webshop api\dblibrary\obj\Debug\net5.0\dblibrary.csproj.AssemblyReference.cache
+C:\Users\Tec\Desktop\webshop api\dblibrary\obj\Debug\net5.0\dblibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tec\Desktop\webshop api\dblibrary\obj\Debug\net5.0\dblibrary.AssemblyInfoInputs.cache
+C:\Users\Tec\Desktop\webshop api\dblibrary\obj\Debug\net5.0\dblibrary.AssemblyInfo.cs
+C:\Users\Tec\Desktop\webshop api\dblibrary\obj\Debug\net5.0\dblibrary.csproj.CoreCompileInputs.cache
+C:\Users\Tec\Desktop\webshop api\dblibrary\obj\Debug\net5.0\dblibrary.dll
+C:\Users\Tec\Desktop\webshop api\dblibrary\obj\Debug\net5.0\refint\dblibrary.dll
+C:\Users\Tec\Desktop\webshop api\dblibrary\obj\Debug\net5.0\dblibrary.pdb
+C:\Users\Tec\Desktop\webshop api\dblibrary\obj\Debug\net5.0\ref\dblibrary.dll

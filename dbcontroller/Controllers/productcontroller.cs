@@ -28,6 +28,34 @@ namespace dbcontroller.Controllers
             return await context.create(product);
         }
 
+        [HttpGet("/api/getallproducts")]
+        public async Task<IActionResult> getallproducts()
+        {
+
+            try
+            {
+                Task<List<product>> myresult = context.getall();
+
+                if (myresult.Result == null)
+                {
+                    return Problem("no data");
+                }
+
+                if (myresult.Result.Count == 0)
+                {
+                    return NoContent();
+                }
+
+                return Ok(myresult.Result);
+
+            }
+            catch (Exception ex)
+            {
+                return Problem(ex.Message);
+            }
+            //return await _context.Author.ToListAsync();
+        }
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> deleteproduct(int id)
         {

@@ -51,6 +51,34 @@ namespace dbcontroller.Controllers
             return Ok(deliveryresult.Result);
         }
 
+        [HttpGet("/api/getalldeliveries")]
+        public async Task<IActionResult> getallusers()
+        {
+
+            try
+            {
+                Task<List<delivery>> myresult = context.getall();
+
+                if (myresult.Result == null)
+                {
+                    return Problem("no data");
+                }
+
+                if (myresult.Result.Count == 0)
+                {
+                    return NoContent();
+                }
+
+                return Ok(myresult.Result);
+
+            }
+            catch (Exception ex)
+            {
+                return Problem(ex.Message);
+            }
+            //return await _context.Author.ToListAsync();
+        }
+
         [HttpPut]
         public async Task<IActionResult> Updatedelivery(delivery delivery)
         {

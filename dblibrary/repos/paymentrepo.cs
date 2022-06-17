@@ -13,6 +13,7 @@ namespace dblibrary.repos
     //Why!! - polymorf, Unit test, og abstract tænkning
     public interface ipaymentrepo
     {
+        Task<List<payment>> getall();
         Task<payment> create(payment entity);
         Task<payment> delete(int id);
 
@@ -27,6 +28,12 @@ namespace dblibrary.repos
         public paymentrepo(ABcontext context)
         {
             this.context = context;
+        }
+
+
+        public Task<List<payment>> getall()
+        {
+            return context.payment.ToListAsync();
         }
 
         public async Task<payment> create(payment entity)
